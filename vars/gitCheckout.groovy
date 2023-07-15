@@ -7,4 +7,3 @@ def call(String branch, String repourl) {
     )
 }
 
-call('main','https://github.com/nalajala9/maven-web.git')
