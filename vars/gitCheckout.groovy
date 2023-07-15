@@ -1,5 +1,5 @@
 
-def call(String branch, String repourl) {
+def call(String branch, String url) {
     scmGit(
         branches: [[name: branch]], 
         extensions: [], 
