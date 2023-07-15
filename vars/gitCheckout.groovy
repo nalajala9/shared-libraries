@@ -1,9 +1,10 @@
 
 def call(String branch, String url) {
-    scmGit(
-        branches: [[name: branch]], 
-        extensions: [], 
-        userRemoteConfigs: [[url: url]]
-    )
+    checkout([$class: 'GitSCM',
+              branches: [[name: branch]],
+              extensions: [],
+              userRemoteConfigs: [[url: url]]
+    ])
 }
+
 
